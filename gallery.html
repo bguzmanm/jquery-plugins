@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Galería de Memes</title>
+		<link
+			rel="stylesheet"
+			href="/fancybox/jquery.fancybox-1.3.4.css"
+			type="text/css"
+			media="screen"
+		/>
+	</head>
+	<body>
+		<main>
+			<a id="meme1" href="./img/meme1.jpeg"
+				><img src="./img/meme1.jpeg" alt="" style="width: 200px"
+			/></a>
+			<a id="meme2" href="./img/meme2.png"
+				><img src="./img/meme2.png" alt="" style="width: 200px"
+			/></a>
+			<a id="meme3" href="./img/meme3.webp"
+				><img src="./img/meme3.webp" alt="" style="width: 200px"
+			/></a>
+		</main>
+		<script
+			type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/fancybox/jquery.fancybox-1.3.4.pack.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/fancybox/jquery.easing-1.3.pack.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="/fancybox/jquery.mousewheel-3.0.4.pack.js"
+		></script>
+		<script>
+			$(document).ready(function () {
+				$('a#meme1').fancybox({
+					overlayShow: true,
+					transitionIn: 'elastic',
+					transitionOut: 'elastic',
+				});
+				$('a#meme2').fancybox({
+					overlayShow: true,
+					transitionIn: 'elastic',
+					transitionOut: 'elastic',
+				});
+				$('a#meme3').fancybox({
+					overlayShow: true,
+					transitionIn: 'elastic',
+					transitionOut: 'elastic',
+				});
+			});
+		</script>
+	</body>
+</html>
